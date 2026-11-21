@@ -1,0 +1,36 @@
+# docker-compose.yml - WordPress + MariaDB (GitHub Codespaces)
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wp
+      MARIADB_PASSWORD: hubert_lab
+      MARIADB_ROOT_PASSWORD: root_lab
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    depends_on: [db]
+    ports:
+      - "8080:80" # port przekierowany przez Codespaces
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: hubert_lab
+      WORDPRESS_DB_NAME: wordpress
+      # By poprawic redirecty
+      CODESPACE_NAME: ${CODESPACE_NAME}
+      GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN: ${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}
+      WP_URL: https://${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', getenv('WP_URL'));
+        define('WP_SITEURL', getenv('WP_URL'));
+        $$_SERVER['HTTP_HOST'] = parse_url(getenv('WP_URL'), PHP_URL_HOST);
+        $$_SERVER['HTTPS'] = 'on';
+    volumes:
+      - ./wp-content:/var/www/html/wp-content # motywy/wtyczki w repozytorium
+
+volumes:
+  db_data:
