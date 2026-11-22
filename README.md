@@ -52,7 +52,12 @@ init - akcja - rejestruje style bloków "Z cieniem" dla przycisku i "Karta" dla 
 
 ## Dostępność
 - kontrast koloru marki "#8524f5" z białym (np. tekst na buttonie "Skontaktuj się z nami") to 5,88:1 (min. 4,5:1 w WCAG)
+
+![kontrast1](https://raw.githubusercontent.com/HKasperekCDV/efficientsoftware/refs/heads/main/screenshots/kontrast1.png)
+  
 - kontrast linków "#b000020" na tle Twenty Twenty-One to 5,52:1 (min. 4,5:1 w WCAG)
+
+![kontrast2](https://raw.githubusercontent.com/HKasperekCDV/efficientsoftware/refs/heads/main/screenshots/kontrast2.png)
 
 ## Licencje fontów i grafik
 - Fonty: motywy nie dołączają własnych plików fontów - używają fonty systemowe
