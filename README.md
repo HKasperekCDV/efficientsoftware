@@ -11,6 +11,7 @@ Wykonałem obie ścieżki z L4 i L5
 
 ## Struktura plików
 
+```
 wp-content/themes
    efficientsoftware/
       style.css
@@ -31,6 +32,7 @@ wp-content/themes
          style.css
          functions.php
          page-o-nas.php
+```
 
 ## Hierarchia szablonów - motyw blokowy efficientsoftware
 Pojedynczy wpis - single.html
@@ -62,6 +64,20 @@ init - akcja - rejestruje style bloków "Z cieniem" dla przycisku i "Karta" dla 
 ## Licencje fontów i grafik
 - Fonty: motywy nie dołączają własnych plików fontów - używają fonty systemowe
 - Grafiki: MP2 nie dodaje nowych grafik - treść stron pochodzi z [MP1](https://github.com/HKasperekCDV/cms-lab), gdzie opisałem ich źródła i licencje
+
+## Zrzuty ekranu
+
+### Strona główna - efficientsoftware
+![strona główna](screenshots/strona_glowna.png)
+
+### Widok mobilny strony głównej - efficientsoftware
+![mobile](screenshots/mobile.png)
+
+### Strona "O nas" - page-o-nas.php - mf-child
+![O nas](screenshots/o_nas.png)
+
+### Styl bloku "Karta" w edytorze - mf-child
+![styl bloku](screenshots/styl_bloku.png)
 
 ## Użycie AI
 Claude - poprawka wyświetlania zajawki (`wp_kses_post()`) - oznaczone odpowiednio w commit message 
