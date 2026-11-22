@@ -7,7 +7,7 @@
       {
         "step": "installTheme",
         "themeData": { "resource": "wordpress.org/themes", "slug": "twentytwentyfive" },
-        "options": { "activate": true }
+        "options": { "activate": false }
       },
       {
         "step": "installPlugin",
@@ -43,7 +43,7 @@
       },
       {
         "step": "importWxr",
-        "file": { "resource": "url", "url": "https://raw.githubusercontent.com/HKasperekCDV/cms-lab/refs/heads/main/efficientsoftware.WordPress.2026-11-12.xml" }
+        "file": { "resource": "url", "url": "https://raw.githubusercontent.com/HKasperekCDV/efficientsoftware/refs/heads/main/efficientsoftware.WordPress.2026-11-12.xml" }
       },
       {
         "step": "setSiteOptions",
@@ -52,6 +52,31 @@
           "page_on_front": 12,
           "page_for_posts": 75
         }
+      },
+      {
+        "step": "installTheme",
+        "themeData": { "resource": "wordpress.org/themes", "slug": "twentytwentyone" },
+        "options": { "activate": false }
+      },
+      {
+        "step": "installTheme",
+        "themeData": {
+          "resource": "git:directory",
+          "url": "https://github.com/HKasperekCDV/efficientsoftware",
+          "ref": "main",
+          "path": "wp-content/themes/mf-child"
+        },
+        "options": { "activate": false }
+      },
+      {
+        "step": "installTheme",
+        "themeData": {
+          "resource": "git:directory",
+          "url": "https://github.com/HKasperekCDV/efficientsoftware",
+          "ref": "main",
+          "path": "wp-content/themes/efficientsoftware"
+        },
+        "options": { "activate": true }
       }
     ]
   }
