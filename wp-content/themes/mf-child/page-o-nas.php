@@ -11,7 +11,8 @@ while ( have_posts() ) :
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'mf-o-nas' ); ?>>
         <header class="entry-header alignwide">
             <h1 class="entry-title"><?php the_title(); ?></h1>
-            <p class="mf-lead"><?php echo esc_html( get_the_excerpt() ); ?></p>
+            <!-- esc_html powodowal buga z tym, ze kod linku czytaj dalej byl pokazywany jako tekst i nie dzialal -->
+            <p class="mf-lead"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
         </header>
         <div class="entry-content">
             <?php the_content(); ?>
