@@ -1,5 +1,7 @@
 # MP2
 
+[Otwórz w WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/HKasperekCDV/efficientsoftware/refs/heads/main/blueprint.json)
+
 Autor: Hubert Kasperek
 
 strona z MP1: [https://github.com/HKasperekCDV/cms-lab](https://github.com/HKasperekCDV/cms-lab)
@@ -89,3 +91,5 @@ init - akcja - rejestruje style bloków "Z cieniem" dla przycisku i "Karta" dla 
 
 ## Użycie AI
 Claude - poprawka wyświetlania zajawki (`wp_kses_post()`) - oznaczone odpowiednio w commit message 
+
+Claude - modyfikacja `blueprint.json` (instalacja obu motywów w Playground z tego repozytorium) - oznaczone odpowiednio w commit message
