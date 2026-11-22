@@ -13,3 +13,7 @@ Text Domain: mf-child
 :root { --mf-accent: #b00020; }
 a { color: var(--mf-accent); }
 h1, h2, h3, h4, h5, h6 { font-family: Literata, Georgia, serif; }
+
+.mf-o-nas {
+    border: 12px solid var(--mf-accent);
+}
