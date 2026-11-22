@@ -36,9 +36,13 @@ wp-content/themes
 
 ## Hierarchia szablonów - motyw blokowy efficientsoftware
 Pojedynczy wpis - single.html
+
 Strona (np. Kariera) - page.html
+
 Lista wpisow (podstrona Blog) - index.html
+
 Archiwum kategorii - archive.html
+
 Nieistniejący adres - 404.html
 
 ## Co zmieniłem względem motywu bazowego
@@ -47,9 +51,13 @@ Nieistniejący adres - 404.html
 
 ### Użyte hooki (mf-child)
 wp_enqueue_scripts wykonuje akcję ładowania style.css potomka po stylu rodzica
-after_setup_theme wykonuje akcje ładowania tłumacczenia
+
+after_setup_theme wykonuje akcje ładowania tłumaczenia
+
 excerpt_length filtruje - skraca zajawki do 16 słów
+
 the_content - filtr - dodaje notkę "Masz pytania? Napisz do nas." pod pojedynczym wpisem
+
 init - akcja - rejestruje style bloków "Z cieniem" dla przycisku i "Karta" dla grupy
 
 ## Dostępność
