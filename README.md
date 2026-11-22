@@ -28,10 +28,10 @@ wp-content/themes
       patterns/
          hero-z-cta.php
          cta-kontakt.php
-       mf-child/
-         style.css
-         functions.php
-         page-o-nas.php
+   mf-child/
+      style.css
+      functions.php
+      page-o-nas.php
 ```
 
 ## Hierarchia szablonów - motyw blokowy efficientsoftware
