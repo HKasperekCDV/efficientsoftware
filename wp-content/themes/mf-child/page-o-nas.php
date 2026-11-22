@@ -16,7 +16,7 @@ while ( have_posts() ) :
         <div class="entry-content">
             <?php the_content(); ?>
         </div>
-        <!-- TODO: dodaj sekcję z danymi firmy lub wzorcem bloków -->
+       <p class="mf-dane-firmy"><?php esc_html_e('Efficient Software sp. z o.o., kontakt@example.com', 'mf-child') ?></p>
     </article>
     <?php
 endwhile;
