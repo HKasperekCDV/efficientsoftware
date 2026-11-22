@@ -28,3 +28,26 @@ function mf_add_note( $content ) {
     }
     return $content; // filtr ZAWSZE zwraca wartość
 }
+
+add_action( 'init', 'mf_register_block_styles' );
+
+function mf_register_block_styles() {
+    register_block_style(
+    'core/button',
+    array(
+        'name' => 'mf-cien',
+        'label' => __( 'Z cieniem', 'mf-child' ),
+        'inline_style' => '.wp-block-button.is-style-mf-cien .wp-block-button__link {'
+        . ' box-shadow: 0 4px 0 var(--mf-accent, #1e3a5f); }',
+    )
+    );
+   register_block_style(
+    'core/group',
+    array(
+        'name' => 'mf-karta',
+        'label' => __( 'Karta', 'mf-child' ),
+        'inline_style' => '.wp-block-group.is-style-mf-karta {'
+        . ' padding: 1.5rem; border: 1px solid #1c1c1c; border-radius: 12px;',
+    )
+   );
+}
